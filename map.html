@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><title>Catapult Accelerator Map</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: org tree, Innovate UK on top, nine Catapult columns, programme boxes stacked under each, coloured by status. */
+:root{--bg:#f5f6f8;--fg:#1b2230;--muted:#5b6577;--line:#9aa5b8;--iuk:#1f5fa8;--iuk-fg:#fff;--cat:#e6eef8;--cat-line:#1f5fa8;
+--c:#fbe9e5;--c-l:#b4321f;--o:#e3f3ea;--o-l:#1d7a4f;--r:#efeafa;--r-l:#6a4fb0;--h:#fbf1dc;--h-l:#a06a00;--n:#f5f6f8;--n-l:#6b7280;
+--f-d:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;--f-b:"IBM Plex Sans",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12161d;--fg:#e4e8ef;--muted:#9aa4b5;--line:#566073;--iuk:#78aef0;--iuk-fg:#12161d;--cat:#1d2a3b;--cat-line:#78aef0;
+--c:#3a2220;--c-l:#f08a76;--o:#183026;--o-l:#6fcf9d;--r:#2a2340;--r-l:#b9a3f0;--h:#352a14;--h-l:#e8b65a;--n:#12161d;--n-l:#a0a7b3;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12161d;--fg:#e4e8ef;--muted:#9aa4b5;--line:#566073;--iuk:#78aef0;--iuk-fg:#12161d;--cat:#1d2a3b;--cat-line:#78aef0;
+--c:#3a2220;--c-l:#f08a76;--o:#183026;--o-l:#6fcf9d;--r:#2a2340;--r-l:#b9a3f0;--h:#352a14;--h-l:#e8b65a;--n:#12161d;--n-l:#a0a7b3;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-b);padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1360px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1{font-family:var(--f-d);font-size:clamp(1.5rem,4vw,2rem);margin:0;font-weight:600}
+p{margin:0;color:var(--muted);max-width:68ch;line-height:1.5}
+.key{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.85rem;list-style:none;margin:0;padding:0}
+.key li{display:flex;align-items:center;gap:6px}
+.sw{width:14px;height:14px;border-radius:3px;border:1.5px solid}
+.sw.c{background:var(--c);border-color:var(--c-l)}.sw.o{background:var(--o);border-color:var(--o-l)}.sw.r{background:var(--r);border-color:var(--r-l)}.sw.h{background:var(--h);border-color:var(--h-l)}.sw.n{background:var(--n);border-color:var(--n-l);border-style:dashed}
+figure{margin:0;display:flex;flex-direction:column;gap:10px}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:8px;padding:8px}
+a{cursor:pointer}a:hover .p,a:hover .cat{stroke-width:3}a:focus-visible{outline:2px solid var(--iuk)}svg{display:block;max-width:none;height:auto;font-family:var(--f-b)}
+figcaption{color:var(--muted);font-size:.85rem}
+.ln{stroke:var(--line);stroke-width:1.5;fill:none}.dash{stroke-dasharray:3 3}
+.iuk{fill:var(--iuk)}.cat{fill:var(--cat);stroke:var(--cat-line);stroke-width:1.5}
+.p{stroke-width:1.5}.p.c{fill:var(--c);stroke:var(--c-l)}.p.o{fill:var(--o);stroke:var(--o-l)}.p.r{fill:var(--r);stroke:var(--r-l)}.p.h{fill:var(--h);stroke:var(--h-l);stroke-dasharray:4 3}.p.n{fill:var(--n);stroke:var(--n-l);stroke-dasharray:4 3}
+text{fill:var(--fg)}.t1{font-size:15px;font-weight:600;fill:var(--iuk-fg)}.t2{font-size:12.5px;font-weight:600}.t3{font-size:11px}
+</style>
+</head><body>
+<div class="wrap">
+<div><h1>Catapult Accelerator Map</h1><p>Innovate UK funds nine Catapults. Under each one are the accelerators and open calls it runs, as of <span id="asof"></span>. <a href="index.html">Open the list view</a>.</p></div>
+<ul class="key" aria-label="Status key"><li><span class="sw c"></span>Closing soon</li><li><span class="sw o"></span>Open or rolling</li><li><span class="sw r"></span>Running or recently closed</li><li><span class="sw h"></span>On the horizon</li><li><span class="sw n"></span>No active accelerator</li></ul>
+<figure><div class="scroll"><div id="map"></div></div><figcaption>Every programme is shown by name, ordered closing soon, open, on the horizon, then running or recently closed. Standing support routes count as open. Click any box to open its source page. Scroll sideways on a phone.</figcaption></figure>
+</div><script>
+const ORGS=[["Cell and Gene Therapy","Cell & Gene|Therapy","https://ct.catapult.org.uk/"],["Semiconductor","Semiconductor","https://sc.catapult.org.uk/"],["Connected Places","Connected|Places","https://cp.catapult.org.uk/"],["Digital","Digital","https://www.digicatapult.org.uk/"],["Energy Systems","Energy|Systems","https://es.catapult.org.uk/"],["High Value Manufacturing","High Value|Manufacturing","https://hvm.catapult.org.uk/"],["Medicines Discovery","Medicines|Discovery","https://md.catapult.org.uk/"],["Offshore Renewable Energy","Offshore Renewable|Energy","https://ore.catapult.org.uk/"],["Satellite Applications","Satellite|Applications","https://sa.catapult.org.uk/"]];
+const ORDER={c:0,h:1,o:2,r:3};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function tl(cx,y,txt,cls){const ls=txt.split("|");return ls.map((l,i)=>`<text x="${cx}" y="${ls.length==2?y-6+i*14:y+4}" text-anchor="middle" class="${cls}">${esc(l)}</text>`).join("")}
+function draw(D){
+  const items=["closingSoon","openRolling","running","horizon"].flatMap(k=>D[k]||[]);
+  const colw=140,x0=20,W=x0*2+colw*9,bw=124,cy=130,ch=44,bus=96,cx=i=>x0+colw*i+colw/2,ix=W/2;
+  const cols=ORGS.map(([org])=>{const m=items.filter(x=>x.org===org).sort((a,b)=>ORDER[a.status]-ORDER[b.status]);return m.length?m:[{short:"No active|accelerator",status:"n"}]});
+  const maxn=Math.max(...cols.map(c=>c.length));const H=cy+ch+22+(maxn-1)*56+44+24;
+  let o=`<a href="https://iuk-business-connect.org.uk/" target="_blank" rel="noopener"><title>Innovate UK Business Connect</title><rect x="${ix-110}" y="16" width="220" height="44" rx="6" class="iuk"/>${tl(ix,38,"Innovate UK","t1")}</a><path d="M${ix} 60V${bus}M${cx(0)} ${bus}H${cx(8)}" class="ln"/>`;
+  ORGS.forEach(([org,lab,home],i)=>{const c=cx(i),b=cols[i];
+    o+=`<path d="M${c} ${bus}V${cy}" class="ln"/><path d="M${c} ${cy+ch}V${cy+ch+22+(b.length-1)*56+22}" class="ln"/>`;
+    o+=`<a href="${home}" target="_blank" rel="noopener"><title>${esc(lab.replace("|"," "))} Catapult website</title><rect x="${c-bw/2}" y="${cy}" width="${bw}" height="${ch}" rx="6" class="cat"/>${tl(c,cy+22,lab,"t2")}</a>`;
+    b.forEach((p,j)=>{const y=cy+ch+22+j*56;const g=`<rect x="${c-bw/2}" y="${y}" width="${bw}" height="44" rx="6" class="p ${p.status}"/>${tl(c,y+22,p.short||p.name,"t3")}`;
+      o+=p.url?`<a href="${esc(p.url)}" target="_blank" rel="noopener"><title>${esc(p.name)}</title>${g}</a>`:g});});
+  document.getElementById("map").innerHTML=`<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Innovate UK, the nine Catapults and their programmes, coloured by status">${o}</svg>`;
+  document.getElementById("asof").textContent=new Date(D.lastChecked+"T00:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});
+}
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(draw).catch(()=>{document.getElementById("map").textContent="Could not load data.json. Serve this folder over HTTP."});
+</script>
+</body></html>

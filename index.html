@@ -1,0 +1,163 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Catapult Accelerator Tracker</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a status board, sections top-to-bottom by urgency; each programme is one row with org, detail, deadline and link. */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --fg:#1b2230; --muted:#5b6577; --line:#dfe3ea;
+  --accent:#1f5fa8; --accent-soft:#e6eef8;
+  --urgent:#b4321f; --urgent-soft:#fbe9e5;
+  --open:#1d7a4f; --open-soft:#e3f3ea;
+  --running:#6a4fb0; --running-soft:#efeafa;
+  --horizon:#a06a00; --horizon-soft:#fbf1dc;
+  --none:#6b7280; --none-soft:#eceef1;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12161d; --surface:#1a2029; --fg:#e4e8ef; --muted:#9aa4b5; --line:#2b3340;
+  --accent:#78aef0; --accent-soft:#1d2a3b;
+  --urgent:#f08a76; --urgent-soft:#3a2220;
+  --open:#6fcf9d; --open-soft:#183026;
+  --running:#b9a3f0; --running-soft:#2a2340;
+  --horizon:#e8b65a; --horizon-soft:#352a14;
+  --none:#a0a7b3; --none-soft:#242a33; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12161d; --surface:#1a2029; --fg:#e4e8ef; --muted:#9aa4b5; --line:#2b3340;
+  --accent:#78aef0; --accent-soft:#1d2a3b;
+  --urgent:#f08a76; --urgent-soft:#3a2220;
+  --open:#6fcf9d; --open-soft:#183026;
+  --running:#b9a3f0; --running-soft:#2a2340;
+  --horizon:#e8b65a; --horizon-soft:#352a14;
+  --none:#a0a7b3; --none-soft:#242a33; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:16px;padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px}
+h1{font-family:var(--f-display);font-weight:600;font-size:clamp(1.6rem,4vw,2.1rem);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0;max-width:62ch}
+.meta{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);text-align:right}
+.meta b{color:var(--fg);font-weight:500}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;font-size:.85rem;font-weight:500;text-decoration:none;color:var(--fg);background:var(--surface);border:1px solid var(--line)}
+.pill:hover{border-color:var(--accent)}
+.pill:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.pill .n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;padding:0 7px;border-radius:999px;font-size:.8rem}
+.s-urgent .n{background:var(--urgent-soft);color:var(--urgent)}
+.s-open .n{background:var(--open-soft);color:var(--open)}
+.s-running .n{background:var(--running-soft);color:var(--running)}
+.s-horizon .n{background:var(--horizon-soft);color:var(--horizon)}
+.s-none .n{background:var(--none-soft);color:var(--none)}
+.banner{background:var(--accent-soft);border:1px solid var(--line);border-radius:10px;padding:14px 18px}
+.banner h2{font-family:var(--f-display);font-size:1rem;margin:0 0 6px;font-weight:600;color:var(--accent);letter-spacing:.02em;text-transform:uppercase}
+.banner ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+#sections{display:flex;flex-direction:column;gap:28px}
+section{display:flex;flex-direction:column;gap:10px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;border-bottom:2px solid var(--line);padding-bottom:6px}
+.sec-head h2{font-family:var(--f-display);font-weight:600;font-size:1.25rem;margin:0}
+.sec-head .hint{color:var(--muted);font-size:.85rem}
+.dot{width:10px;height:10px;border-radius:50%;flex:none;align-self:center}
+.s-urgent .dot{background:var(--urgent)}.s-open .dot{background:var(--open)}.s-running .dot{background:var(--running)}.s-horizon .dot{background:var(--horizon)}.s-none .dot{background:var(--none)}
+.rows{display:flex;flex-direction:column;gap:8px}
+.row{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;grid-template-columns:150px minmax(0,1fr) 160px;gap:6px 18px;align-items:start}
+.org{font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+.main{min-width:0}
+.name{font-weight:600;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.name a{color:var(--fg);text-decoration:none}
+.name a:hover{color:var(--accent);text-decoration:underline}
+.desc{margin:3px 0 0;color:var(--muted);font-size:.9rem}
+.note{margin:4px 0 0;font-size:.8rem;color:var(--muted);font-style:italic}
+.when{text-align:right;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.when .d{color:var(--fg)}
+.left{display:inline-block;margin-top:4px;padding:1px 8px;border-radius:999px;font-weight:500}
+.s-urgent .left{background:var(--urgent-soft);color:var(--urgent)}
+.badge{font-size:.68rem;font-weight:600;letter-spacing:.05em;padding:1px 6px;border-radius:4px;text-transform:uppercase}
+.badge.new{background:var(--accent);color:var(--surface)}
+.badge.upd{background:var(--horizon-soft);color:var(--horizon)}
+.empty{color:var(--muted);font-size:.9rem;padding:8px 2px}
+footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:6px}
+footer h3{font-size:.85rem;margin:0;color:var(--fg)}
+footer ul{margin:0;padding-left:18px}
+@media (max-width:680px){
+  .row{grid-template-columns:minmax(0,1fr)}
+  .when{text-align:left}
+  .meta{text-align:left}
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Catapult Accelerator Tracker</h1>
+      <p class="sub">Accelerator, incubator and open-call activity across the nine Innovate UK Catapults, sorted by urgency.</p>
+    </div>
+    <div class="meta">Last checked <b id="lastChecked"></b><br>Countdowns relative to <span id="refDate"></span></div>
+  </header>
+
+  <nav class="pills" id="pills" aria-label="Sections"></nav>
+
+  <div class="banner" id="changes" hidden>
+    <h2>Changed since last check</h2>
+    <ul id="changeList"></ul>
+  </div>
+
+  <div id="sections"></div>
+
+  <footer>
+    <h3>Coverage notes</h3>
+    <ul id="gaps"></ul>
+  </footer>
+</div>
+
+<script>
+let DATA = {lastChecked:"",changes:[],closingSoon:[],openRolling:[],running:[],horizon:[],none:[],gaps:[]};
+const TODAY = new Date(new Date().toDateString());
+function daysUntil(iso){ return Math.round((new Date(iso+"T00:00:00") - TODAY)/86400000); }
+
+const SECTIONS = [
+  { key:"closingSoon", cls:"s-urgent", title:"Closing Soon", hint:"Deadline within ~30 days", empty:"Nothing closes in the next 30 days." },
+  { key:"openRolling", cls:"s-open", title:"Open & Rolling", hint:"Live with no near deadline", empty:"No rolling calls found." },
+  { key:"running", cls:"s-running", title:"Running & Recently Closed", hint:"Cohorts under way or applications just closed", empty:"None." },
+  { key:"horizon", cls:"s-horizon", title:"On the Horizon", hint:"Signalled but not yet open", empty:"Nothing signalled." },
+  { key:"none", cls:"s-none", title:"No Active Accelerator", hint:"Checked, nothing live", empty:"Every Catapult has something live." }
+];
+
+function esc(s){ return String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function fmt(d){ return d.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}); }
+
+function render(){
+  document.getElementById("lastChecked").textContent = fmt(new Date(DATA.lastChecked+"T00:00:00"));
+  document.getElementById("refDate").textContent = fmt(TODAY);
+
+  if (DATA.changes && DATA.changes.length){
+    document.getElementById("changes").hidden = false;
+    document.getElementById("changeList").innerHTML = DATA.changes.map(c => `<li>${esc(c)}</li>`).join("");
+  }
+
+  document.getElementById("pills").innerHTML = SECTIONS.map(s =>
+    `<a class="pill ${s.cls}" href="#${s.key}">${s.title}<span class="n" id="count-${s.key}">${(DATA[s.key]||[]).length}</span></a>`).join("");
+
+  document.getElementById("sections").innerHTML = SECTIONS.map(s => {
+    const items = DATA[s.key] || [];
+    const rows = items.length ? items.map(it => {
+      let when = `<span class="d">${esc(it.deadlineLabel)}</span>`;
+      if (it.deadline){ const d = daysUntil(it.deadline); when += `<br><span class="left">${d < 0 ? "Closed" : d === 0 ? "Closes today" : d + "d left"}</span>`; }
+      const badges = (it.isNew ? ' <span class="badge new">New</span>' : '') + (it.updated ? ' <span class="badge upd">Updated</span>' : '');
+      return `<article class="row">
+        <div class="org">${esc(it.org)}</div>
+        <div class="main"><p class="name"><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.name)}</a>${badges}</p>
+          <p class="desc">${esc(it.desc)}</p>${it.note ? `<p class="note">${esc(it.note)}</p>` : ""}</div>
+        <div class="when">${when}</div></article>`;
+    }).join("") : `<p class="empty">${s.empty}</p>`;
+    return `<section id="${s.key}" class="${s.cls}">
+      <div class="sec-head"><span class="dot"></span><h2>${s.title}</h2><span class="hint">${s.hint}</span></div>
+      <div class="rows">${rows}</div></section>`;
+  }).join("");
+
+  document.getElementById("gaps").innerHTML = DATA.gaps.map(g => `<li>${esc(g)}</li>`).join("");
+}
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{DATA=d;render();}).catch(()=>{document.getElementById("sections").innerHTML='<p class="empty">Could not load data.json. Serve this folder over HTTP rather than opening the file directly.</p>';});
+</script>
+
+</body></html>

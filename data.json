@@ -1,0 +1,860 @@
+{
+ "lastChecked": "2026-10-26",
+ "changes": [
+  "Deep sweep of all nine Catapults: about 50 programmes added, covering programme, priorities, services and funding pages as well as news.",
+  "Closing soon: Energy Resilience Accelerator (Energy Systems) closes 8 Nov 2026, with trial funding up to about £40k.",
+  "Connected Places: eleven running or just-closed programmes added, including Freight Innovation Fund, TRIG, Scale-Up Support, Diesel-Free Sites and Clean Transport Accelerator: Maritime; SME Network confirmed still always open on its own page.",
+  "Digital Catapult: Applied AI Growth Programme sprints (rolling), Assured 5G, Quantum Access Cohort 3, Black Founders, SONIC Labs and others added.",
+  "Offshore Renewable Energy: NEOWIND fund, F4OR rounds, OWGP and FLOWB added. High Value Manufacturing: Wind Innovation Hub (closed 5 Oct) and the industrial AI pilot found.",
+  "Energy Systems: Retrofit Accelerator cohort 1 confirmed (eight SMEs, Mar–Jul 2026) and incubation, Living Lab and SME consultation routes added.",
+  "Also new: Microgravity Biopharma Accelerator and NADIC drone test-bed (Satellite Applications); PACE, direct investment and KTPs (Medicines Discovery); in-kind spin-out support (Cell and Gene Therapy)."
+ ],
+ "closingSoon": [
+  {
+   "org": "Digital",
+   "name": "UK Digital Twin Centre Collaborative R&D Pathways",
+   "desc": "For organisations with a digital twin use case that still needs an important question answered.",
+   "deadlineLabel": "27 Oct 2026",
+   "url": "https://www.digicatapult.org.uk/apply/opportunities/opportunity/uk-digital-twin-centre-collaborative-rd-pathways/",
+   "deadline": "2026-10-27",
+   "status": "c",
+   "short": "DT Collab R&D|Pathways · 27 Oct"
+  },
+  {
+   "org": "Digital",
+   "name": "Digital Twin Industry Challenge Led Accelerator",
+   "desc": "Nine-month accelerator pairing UK SMEs with maritime, aerospace and defence challenge owners; up to £75,000 Innovate UK grant per team.",
+   "deadlineLabel": "27 Oct 2026",
+   "url": "https://www.digicatapult.org.uk/apply/opportunities/opportunity/digital-twin-industry-challenge-led-accelerator/",
+   "deadline": "2026-10-27",
+   "note": "Opened 15 Sep 2026. Successful applicants announced January 2027.",
+   "status": "c",
+   "short": "DT Challenge Led|Accelerator · 27 Oct"
+  },
+  {
+   "org": "Connected Places",
+   "name": "HMGCC Co-Creation challenge (CPC listing)",
+   "desc": "HMGCC co-creation challenge listed by CPC under the title 'AI-enhanced x-ray imaging for bomb disposal'.",
+   "deadlineLabel": "29 Oct 2026, 17:00",
+   "url": "https://cp.catapult.org.uk/opportunity/mobile-mimicry-using-ai-2/",
+   "deadline": "2026-10-29",
+   "note": "The listing's title, summary and URL refer to different HMGCC challenges (x-ray imaging and mobile mimicry). Confirm which one the deadline applies to.",
+   "status": "c",
+   "short": "HMGCC x-ray /|mimicry · 29 Oct"
+  },
+  {
+   "org": "Connected Places",
+   "name": "Commercial Cooking Air Quality Trial",
+   "desc": "Invitation for local authorities to join the next phase of an air-quality trial that follows an innovation procurement with Westminster City Council.",
+   "deadlineLabel": "30 Oct 2026, 12:00",
+   "url": "https://cp.catapult.org.uk/opportunity/commercial-cooking-air-quality-trial/",
+   "deadline": "2026-10-30",
+   "note": "For local authorities, not start-ups. Included for completeness.",
+   "status": "c",
+   "short": "Cooking Air Quality|Trial · 30 Oct"
+  },
+  {
+   "org": "Energy Systems",
+   "name": "Energy Resilience Accelerator",
+   "desc": "Fully funded SME support package with trial funding of up to about £40k, set by six challenge partners: NESO, SSEN, NHS ambulance services, NHS clinical estates, NGED and Centrica. TRL 6+.",
+   "deadlineLabel": "8 Nov 2026, 23:59",
+   "url": "https://es.catapult.org.uk/news/energy-resilience-accelerator-helping-smes-scale-their-resilience-innovations/",
+   "deadline": "2026-11-08",
+   "note": "Apply via esc.simplydo.co.uk. Trial funding depends on a challenge partner approving the proposal. Other key dates not stated.",
+   "isNew": true,
+   "status": "c",
+   "short": "Energy Resilience|Accelerator · 8 Nov"
+  },
+  {
+   "org": "Connected Places",
+   "name": "HMGCC Co-Creation: Smart glasses for mapping",
+   "desc": "12-week funded challenge to build an edge device that turns off-the-shelf smart-glasses video and audio into high-fidelity 3D maps for defence and security reconnaissance. TRL 4+; up to £60,000 ex VAT.",
+   "deadlineLabel": "12 Nov 2026, 17:00",
+   "url": "https://cp.catapult.org.uk/opportunity/smart-glasses-for-mapping",
+   "deadline": "2026-11-12",
+   "status": "c",
+   "short": "HMGCC: Smart|glasses · 12 Nov"
+  },
+  {
+   "org": "Connected Places",
+   "name": "HMGCC Co-Creation: Multi-terrain micro robotic systems",
+   "desc": "10-week challenge to fund proof-of-concept small unmanned robots that move across water, land and air; up to £60,000 ex VAT. No security clearance needed.",
+   "deadlineLabel": "12 Nov 2026, 23:59",
+   "url": "https://cp.catapult.org.uk/opportunity/multi-terrain-micro-robotic-systems",
+   "deadline": "2026-11-12",
+   "status": "c",
+   "short": "HMGCC: Micro|robotics · 12 Nov"
+  },
+  {
+   "org": "Digital",
+   "name": "Advanced Connectivity Technologies Growth Programme",
+   "desc": "Supports UK businesses scaling deep tech connectivity solutions across telecoms, satellite and semiconductors. Run with the Satellite Applications and Semiconductor Catapults.",
+   "deadlineLabel": "15 Nov 2026",
+   "url": "https://www.digicatapult.org.uk/apply/opportunities/opportunity/advanced-connectivity-technologies-growth-programme/",
+   "deadline": "2026-11-15",
+   "note": "Briefing webinar 28 Oct, 13:00.",
+   "status": "c",
+   "short": "Adv. Connectivity|Growth · 15 Nov"
+  },
+  {
+   "org": "Digital",
+   "name": "Smart Nano: Photonics Capability Programme",
+   "desc": "Hands-on photonics training in PIC design, simulation and prototyping, with access to Smart Nano NI infrastructure.",
+   "deadlineLabel": "15 Nov 2026",
+   "url": "https://www.digicatapult.org.uk/apply/opportunities/opportunity/smart-nano-photonics-capability-programme/",
+   "deadline": "2026-11-15",
+   "status": "c",
+   "short": "Smart Nano|Photonics · 15 Nov"
+  },
+  {
+   "org": "Digital",
+   "name": "Digital Twin Technology Access Programme",
+   "desc": "For organisations that want to understand how digital twin technology could support them.",
+   "deadlineLabel": "17 Nov 2026",
+   "url": "https://www.digicatapult.org.uk/apply/opportunities/opportunity/digital-twin-technology-access-programme/",
+   "deadline": "2026-11-17",
+   "note": "Webinar series starts 28 Oct, 14:00.",
+   "status": "c",
+   "short": "DT Technology|Access · 17 Nov"
+  }
+ ],
+ "openRolling": [
+  {
+   "org": "Connected Places",
+   "name": "Freight and Logistics Innovation Network (FLIN)",
+   "desc": "National network that helps freight and logistics innovations reach market by reducing adoption risk.",
+   "deadlineLabel": "Always open",
+   "url": "https://cp.catapult.org.uk/opportunity/freight-logistics-innovation-network/",
+   "status": "o",
+   "short": "Freight & Logistics|Network"
+  },
+  {
+   "org": "Connected Places",
+   "name": "SME Network",
+   "desc": "Membership route for SMEs with transport and place innovations; feeds into CPC calls and pilots.",
+   "deadlineLabel": "Always open",
+   "url": "https://cp.catapult.org.uk/opportunity/join-the-sme-network/",
+   "note": "Missing from the CPC open-calls list on 26 Oct, but its own page (updated 2 Jul 2026) still says always open. Judged case by case on fit and TRL.",
+   "updated": true,
+   "status": "o",
+   "short": "SME Network"
+  },
+  {
+   "org": "Connected Places",
+   "name": "West Midlands Logistics & Distribution Cluster",
+   "desc": "Free membership for UK-registered organisations in or interested in logistics and distribution in the West Midlands; run with the West Midlands Combined Authority.",
+   "deadlineLabel": "Always open",
+   "url": "https://cp.catapult.org.uk/opportunity/west-midlands-logistics-distribution-cluster/",
+   "isNew": true,
+   "status": "o",
+   "short": "West Midlands|Logistics Cluster"
+  },
+  {
+   "org": "Satellite Applications",
+   "name": "UK Microgravity Demonstration Programme",
+   "desc": "Support for 2–3 ISS microgravity demonstration projects at roughly 15–30% intervention, across life sciences, materials, semiconductors, manufacturing and defence.",
+   "deadlineLabel": "EOI closes 11 Dec 2026, 12:00",
+   "url": "https://sa.catapult.org.uk/opportunity/uk-microgravity-demonstration-programme/",
+   "deadline": "2026-12-11",
+   "note": "Applicant webinar 29 Oct; clarification questions by 5 Nov. Shortlisting Jan–Mar 2027; indicative flight summer 2027 onwards.",
+   "status": "o",
+   "short": "Microgravity Demo|EOI · 11 Dec"
+  },
+  {
+   "org": "Satellite Applications",
+   "name": "HMGCC Co-Creation Challenges",
+   "desc": "Four HMGCC challenges listed: hidden stab vests for women, AI-enhanced x-ray imaging for bomb disposal, smart glasses for mapping and multi-terrain micro robotic systems.",
+   "deadlineLabel": "Deadline not on listing",
+   "url": "https://sa.catapult.org.uk/work-with-us/opportunities/",
+   "note": "Challenge-led contracts rather than a cohort accelerator. Deadlines match the Connected Places listings for the three that CPC also lists.",
+   "status": "o",
+   "short": "HMGCC Co-Creation|(4 challenges)"
+  },
+  {
+   "org": "Satellite Applications",
+   "name": "Innovate UK Business Growth",
+   "desc": "Growth support for established, innovation-driven SMEs: a dedicated growth specialist plus access to IP expertise, investor networks and international partners.",
+   "deadlineLabel": "Always open",
+   "url": "https://sa.catapult.org.uk/opportunity/innovate-uk-business-growth/",
+   "note": "Promoted by the Catapult, delivered by Innovate UK. Not described as a cohort accelerator.",
+   "status": "o",
+   "short": "Innovate UK|Business Growth"
+  },
+  {
+   "org": "Satellite Applications",
+   "name": "Space Enterprise Lab network",
+   "desc": "Free collaborative workspace for project delivery at 15 sites, including Harwell, Westcott, IDEALondon, Edinburgh, Glasgow, Belfast and Newport. Book through an enquiry form.",
+   "deadlineLabel": "Rolling",
+   "url": "https://sa.catapult.org.uk/sel",
+   "isNew": true,
+   "status": "o",
+   "short": "Space Enterprise|Labs (15 sites)"
+  },
+  {
+   "org": "Digital",
+   "name": "Applied AI Growth Programme: Sprints",
+   "desc": "Sprints for UK AI businesses moving from validated pilots to deployment-ready, across six growth sectors. Demonstrator/testbed and ecosystem streams are still being designed.",
+   "deadlineLabel": "Rolling (no deadline listed)",
+   "url": "https://www.digicatapult.org.uk/programmes/programme/applied-ai-growth-programme/",
+   "note": "Funded by Innovate UK. Workshop series: 18 Nov London, 25 Nov Manchester, 19 and 27 Jan 2027, by expression of interest.",
+   "isNew": true,
+   "status": "o",
+   "short": "Applied AI Growth|Sprints"
+  },
+  {
+   "org": "Energy Systems",
+   "name": "Energy Start-up Incubation & Acceleration",
+   "desc": "Needs assessment, mentoring, and introductions to customers and investors for high-growth-potential energy start-ups. Enquire through a form on the page.",
+   "deadlineLabel": "Rolling",
+   "url": "https://es.catapult.org.uk/what-we-do/energy-launchpad-and-international/incubation-and-acceleration/",
+   "isNew": true,
+   "status": "o",
+   "short": "Start-up Incubation|& Acceleration"
+  },
+  {
+   "org": "Energy Systems",
+   "name": "Living Lab and Whole Energy Systems Accelerator (WESA)",
+   "desc": "Test-bed of over 5,000 UK homes, plus WESA, which links Living Lab homes to network emulation. Free virtual consultation by email.",
+   "deadlineLabel": "Enquiry-based",
+   "url": "https://es.catapult.org.uk/what-we-do/living-lab/",
+   "note": "Enrolment terms and WESA trial availability not stated.",
+   "isNew": true,
+   "status": "o",
+   "short": "Living Lab &|WESA (enquiry)"
+  },
+  {
+   "org": "Energy Systems",
+   "name": "Free SME growth consultation",
+   "desc": "Booking is open for a free growth consultation with the Catapult's innovator team.",
+   "deadlineLabel": "Rolling",
+   "url": "https://es.catapult.org.uk/book-a-free-sme-growth-consultation/",
+   "isNew": true,
+   "status": "o",
+   "short": "Free SME growth|consultation"
+  },
+  {
+   "org": "Cell and Gene Therapy",
+   "name": "In-kind support for academic spin-outs and start-ups",
+   "desc": "In-kind Catapult support for company creation and early translation of therapeutics, platforms and enabling technologies. Open to academic researchers at UK universities.",
+   "deadlineLabel": "Rolling (no deadline stated)",
+   "url": "https://ct.catapult.org.uk/p/apply-for-in-kind-support",
+   "note": "Also: a free GMP feasibility clinic and digital/automation testbeds, both by enquiry.",
+   "isNew": true,
+   "status": "o",
+   "short": "In-kind support for|spin-outs"
+  },
+  {
+   "org": "High Value Manufacturing",
+   "name": "Start-up and entrepreneur advisory service",
+   "desc": "Free three-step support (consultation, discovery workshop, innovation project) for early manufacturing businesses. Not suited to the very earliest stage.",
+   "deadlineLabel": "Rolling",
+   "url": "https://hvm.catapult.org.uk/who-we-work-with/start-ups-or-entrepreneurs/",
+   "note": "Page last edited Jan 2025. Also lists centre schemes (NCC Edge, MTC Reach, Manufacturing Energy Toolkit) with no stated terms.",
+   "isNew": true,
+   "status": "o",
+   "short": "Start-up & entrepreneur|advisory service"
+  },
+  {
+   "org": "Medicines Discovery",
+   "name": "Knowledge Transfer Partnerships (MDC as Knowledge Base)",
+   "desc": "A graduate KTP Associate employed by MDC is placed in a UK company for 12–36 months; Innovate UK typically funds two-thirds of SME project cost.",
+   "deadlineLabel": "Rolling",
+   "url": "https://md.catapult.org.uk/drug-discovery/consultancy/knowledge-transfer-partnership/",
+   "note": "Deadlines sit on Innovate UK's KTP rounds page. UK Intracellular Drug Delivery Centre (CPI-led, with MDC) also offers a single access point for RNA and delivery innovators.",
+   "isNew": true,
+   "status": "o",
+   "short": "Knowledge Transfer|Partnerships"
+  },
+  {
+   "org": "Offshore Renewable Energy",
+   "name": "Offshore Wind Growth Partnership (OWGP)",
+   "desc": "Industry-funded support for offshore wind supply chain firms, delivered by the Catapult for the Offshore Wind Industry Council; £100m over 10 years with competitive rounds.",
+   "deadlineLabel": "Rounds not stated",
+   "url": "https://ore.catapult.org.uk/programmes/owgp",
+   "note": "Check owgp.org.uk for current rounds.",
+   "isNew": true,
+   "status": "o",
+   "short": "Offshore Wind Growth|Partnership"
+  },
+  {
+   "org": "Semiconductor",
+   "name": "Business Connect scheme",
+   "desc": "Access to the Catapult's expertise and facilities for start-ups and SMEs, mentioned on its start-ups page.",
+   "deadlineLabel": "Not stated",
+   "url": "https://sc.catapult.org.uk/start-ups-and-smes/",
+   "note": "No eligibility, dates or link given. Unconfirmed.",
+   "isNew": true,
+   "status": "o",
+   "short": "Business Connect|(unconfirmed)"
+  }
+ ],
+ "running": [
+  {
+   "org": "Connected Places",
+   "name": "Freight Innovation Fund – Venture Growth Programme",
+   "desc": "Four-month pilot of commercial and investment-readiness support for freight and logistics SMEs (TRL 7+), with access to FLIN operators.",
+   "deadlineLabel": "Closed 21 Sep 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/freight-innovation-fund-venture-growth-programme/",
+   "note": "Cohort selected 26 Oct; welcome day 29 Oct; investor/operator event 31 Mar 2027.",
+   "isNew": true,
+   "status": "r",
+   "short": "Freight Venture|Growth Programme"
+  },
+  {
+   "org": "Connected Places",
+   "name": "Infrastructure Productivity Scale-Up Programme",
+   "desc": "Up to £8k towards a demonstration for up to 10 UK SMEs (TRL 8+) with construction or infrastructure solutions; Innovate UK-funded, with i3P.",
+   "deadlineLabel": "Closed 28 Sep 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/infrastructure-productivity-scale-up-programme/",
+   "note": "Interviews 2–5 Nov; notification 10 Nov; welcome day 17 Nov; delivery to March 2027.",
+   "isNew": true,
+   "status": "r",
+   "short": "Infrastructure Productivity|Scale-Up"
+  },
+  {
+   "org": "Connected Places",
+   "name": "Scale-Up Support Programme",
+   "desc": "Innovate UK-funded coaching and investor introductions for transport, construction and infrastructure SMEs (TRL 7–9). No direct funding.",
+   "deadlineLabel": "Closed 11 Sep 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/scale-up-support-programme/",
+   "note": "Onboarding 12–30 Oct; runs Nov 2026–Feb 2027.",
+   "isNew": true,
+   "status": "r",
+   "short": "Scale-Up Support|Programme"
+  },
+  {
+   "org": "Connected Places",
+   "name": "Diesel-Free Sites Adoption Programme",
+   "desc": "Up to £60k per demonstration for UK SMEs (TRL 7+), run with Anglian Water and Costain through the Strategic Pipeline Alliance.",
+   "deadlineLabel": "Closed 7 Sep 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/diesel-free-sites-adoption-programme/",
+   "note": "Cohort selected 12 Oct; trials Nov 2026–Feb 2027.",
+   "isNew": true,
+   "status": "r",
+   "short": "Diesel-Free Sites|Adoption"
+  },
+  {
+   "org": "Connected Places",
+   "name": "Connected Airport Living Lab 2026–27",
+   "desc": "Up to 3 SMEs (TRL 5–9) get up to £30k to trial at Glasgow Airport; Innovate UK-funded.",
+   "deadlineLabel": "Closed 17 Aug 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/connected-airport-living-lab-2026-27-programme/",
+   "note": "Trials Oct 2026–Jan 2027; ends 31 Mar 2027.",
+   "isNew": true,
+   "status": "r",
+   "short": "Connected Airport|Living Lab"
+  },
+  {
+   "org": "Connected Places",
+   "name": "Clean Transport Accelerator: Maritime",
+   "desc": "Six-month programme for up to 6 UK SMEs (TRL 5–8), with up to £30k for a trial. Partners include Serco, Port of Tyne and Portsmouth International Port.",
+   "deadlineLabel": "Closed 28 Jul 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/clean-transport-accelerator-maritime/",
+   "note": "Welcome day 29 Sep.",
+   "isNew": true,
+   "status": "r",
+   "short": "Clean Transport|Accel: Maritime"
+  },
+  {
+   "org": "Connected Places",
+   "name": "Freight Innovation Fund Accelerator 2026 (Cohort 5)",
+   "desc": "DfT-funded: up to 12 SMEs get up to £10k, then up to 8 get up to £100k for trials, with 30% match funding.",
+   "deadlineLabel": "Closed 1 Jun 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/freight-innovation-fund-accelerator-2026-cohort-5/",
+   "note": "Welcome day 18 Aug.",
+   "isNew": true,
+   "status": "r",
+   "short": "Freight Innovation Fund|Cohort 5"
+  },
+  {
+   "org": "Connected Places",
+   "name": "TRIG 2026 (Cohort 19)",
+   "desc": "Run with DfT: grants up to £45k each for TRL 2–4 projects; up to £2.385m for 53 projects, open to UK-registered organisations of any size.",
+   "deadlineLabel": "Applications closed",
+   "url": "https://cp.catapult.org.uk/opportunity/trig-2026-competition-cohort-19/",
+   "note": "DfT interviews Oct–Nov 2026; awards Jan 2027; delivery Feb–Jun 2027. No next cohort stated.",
+   "isNew": true,
+   "status": "r",
+   "short": "TRIG 2026|(Cohort 19)"
+  },
+  {
+   "org": "Connected Places",
+   "name": "The Ideas Elevator (maritime decarbonisation)",
+   "desc": "DfT-backed pilot for UK SMEs or university researchers at TRL 1–2; strongest pitches are fast-tracked to TRIG interviews.",
+   "deadlineLabel": "Closed 8 May 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/the-ideas-elevator-maritime-decarbonisation/",
+   "note": "Pitch day 14 Jul.",
+   "isNew": true,
+   "status": "r",
+   "short": "Ideas Elevator|(maritime)"
+  },
+  {
+   "org": "Connected Places",
+   "name": "HADeS 2026",
+   "desc": "Airport security screening innovation for DfT: £40k proof-of-concept and £75k pre-demonstrator tracks, open to any UK-registered organisation or university.",
+   "deadlineLabel": "Closed 19 Jun 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/hades-2026-competition/",
+   "note": "Projects run 1 Sep–26 Feb; nine businesses funded.",
+   "isNew": true,
+   "status": "r",
+   "short": "HADeS 2026"
+  },
+  {
+   "org": "Connected Places",
+   "name": "Rail Growth Support Programme",
+   "desc": "Innovate UK-funded, with Network Rail, for UK SMEs at TRL 3–6 who have previously taken part in a Catapult programme.",
+   "deadlineLabel": "Closed 17 Jul 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/rail-growth-support-programme/",
+   "note": "Page is marked closed but still lists the July deadline. Delivery Sep–Jan.",
+   "isNew": true,
+   "status": "r",
+   "short": "Rail Growth Support|Programme"
+  },
+  {
+   "org": "Connected Places",
+   "name": "IPEC coastal erosion and environmental monitoring EoI",
+   "desc": "Free expression of interest for local or combined authorities.",
+   "deadlineLabel": "Closed 13 Aug 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/expression-of-interest-ipec-coastal-erosion-and-environmental-monitoring/",
+   "note": "Cohort chosen 31 Aug; runs Sep 2026–Mar 2027.",
+   "isNew": true,
+   "status": "r",
+   "short": "IPEC coastal erosion|EoI"
+  },
+  {
+   "org": "Connected Places",
+   "name": "IED Component Detection in Hold-Baggage Screening (EoI)",
+   "desc": "Expression of interest for technology that detects improvised explosive device components in hold-baggage screening.",
+   "deadlineLabel": "Closed 21 Oct 2026",
+   "url": "https://cp.catapult.org.uk/opportunity/ied-component-detection-expression-of-interest/",
+   "note": "The CPC listing summary appears copied from a separate SME pilot programme; check the opportunity page for the actual scope.",
+   "status": "r",
+   "short": "IED detection EoI|closed 21 Oct"
+  },
+  {
+   "org": "Digital",
+   "name": "Digital Twin Adoption Accelerator 2026",
+   "desc": "Nine-month programme for SME–adopter partnerships, powered by the UK Digital Twin Centre; up to £100,000 grant per project, nine partnerships.",
+   "deadlineLabel": "Closed 6 Sep 2026",
+   "url": "https://iuk-business-connect.org.uk/opportunities/digital-catapult-digital-twin-adoption-accelerator-2026/",
+   "note": "Onboarding 18 Nov 2026; runs to June 2027.",
+   "status": "r",
+   "short": "DT Adoption|Accelerator 2026"
+  },
+  {
+   "org": "Digital",
+   "name": "Assured 5G Technical Authority",
+   "desc": "15-month vendor-neutral testing and assurance programme for private 5G, for projects selected by Innovate UK.",
+   "deadlineLabel": "Selected 2 Sep 2026",
+   "url": "https://www.digicatapult.org.uk/programmes/programme/assured-5g-technical-authority/",
+   "note": "No application call; a sign-up exists for future private 5G activity.",
+   "isNew": true,
+   "status": "r",
+   "short": "Assured 5G|Technical Authority"
+  },
+  {
+   "org": "Digital",
+   "name": "Quantum Technology Access Programme (Cohort 3)",
+   "desc": "Eleven organisations run optimisation and quantum machine learning use cases on an NQCC quantum computer, with the NQCC's SparQ programme.",
+   "deadlineLabel": "Running to Feb 2027",
+   "url": "https://www.digicatapult.org.uk/programmes/programme/quantum-technology-access-programme/",
+   "note": "No next round announced; register-interest form only.",
+   "isNew": true,
+   "status": "r",
+   "short": "Quantum Tech Access|(Cohort 3)"
+  },
+  {
+   "org": "Digital",
+   "name": "Digital Twin Academic R&D Accelerator",
+   "desc": "Academia–industry digital twin R&D with the Alan Turing Institute and Cranfield University.",
+   "deadlineLabel": "Announced 15 May 2026",
+   "url": "https://www.digicatapult.org.uk/about/press-releases/post/uk-digital-twin-centre-to-accelerate-digital-twin-innovation/",
+   "note": "Selected participants only; no open call.",
+   "isNew": true,
+   "status": "r",
+   "short": "DT Academic R&D|Accelerator"
+  },
+  {
+   "org": "Digital",
+   "name": "Smart Nano: Advanced Connectivity Technology Access Programme",
+   "desc": "Cohort of 10 companies launched 6 May 2026; results reported 11 Aug 2026.",
+   "deadlineLabel": "Appears concluded",
+   "url": "https://www.digicatapult.org.uk/about/press-releases/post/digital-catapult-to-accelerate-real-world-innovation/",
+   "note": "A further round is not stated.",
+   "isNew": true,
+   "status": "r",
+   "short": "Smart Nano Tech|Access (cohort)"
+  },
+  {
+   "org": "Digital",
+   "name": "SONIC Labs (Open RAN testing)",
+   "desc": "Open RAN conformance testing and badging with Ofcom; cohort 6 offered up to £30k per product plus testbed access.",
+   "deadlineLabel": "Cohort 6 closed 3 Apr 2025",
+   "url": "https://www.digicatapult.org.uk/programmes/programme/sonic-labs/",
+   "note": "Page shows a 'Testing facilities now open' banner; current round not confirmed.",
+   "isNew": true,
+   "status": "r",
+   "short": "SONIC Labs|(Open RAN)"
+  },
+  {
+   "org": "Digital",
+   "name": "Black Founders Programme",
+   "desc": "14-week accelerator for early-stage and pre-seed Black-founded companies in the UK creative economy, with Sony Music and Channel 4.",
+   "deadlineLabel": "2025 cohort of 12",
+   "url": "https://www.digicatapult.org.uk/programmes/programme/black-founders-programme/",
+   "note": "No next round listed; get-involved form only.",
+   "isNew": true,
+   "status": "r",
+   "short": "Black Founders|Programme"
+  },
+  {
+   "org": "Digital",
+   "name": "CreaTech Frontiers (West Midlands)",
+   "desc": "Growth Accelerators (10 weeks, £15k of support) and Challenge Calls (16 weeks, funded prototypes) for West Midlands companies.",
+   "deadlineLabel": "Both closed",
+   "url": "https://www.digicatapult.org.uk/programmes/programme/createch-frontiers/",
+   "note": "Register-interest form for future calls.",
+   "isNew": true,
+   "status": "r",
+   "short": "CreaTech Frontiers|(West Midlands)"
+  },
+  {
+   "org": "Digital",
+   "name": "MyWorld creative technology calls",
+   "desc": "Challenge Calls up to £50k and collaborative R&D up to £2m in total; led by the University of Bristol with Catapult delivery.",
+   "deadlineLabel": "Both call types closed",
+   "url": "https://www.digicatapult.org.uk/programmes/programme/myworld/",
+   "note": "Partner-led.",
+   "isNew": true,
+   "status": "r",
+   "short": "MyWorld creative|tech calls"
+  },
+  {
+   "org": "Energy Systems",
+   "name": "Retrofit Accelerator (Cohort 1)",
+   "desc": "Helped eight energy SMEs take retrofit innovations to market, with partners EDF, WMCA and Wates; over £20k of support per SME.",
+   "deadlineLabel": "Support ran Mar–Jul 2026",
+   "url": "https://es.catapult.org.uk/project/connecting-retrofit-innovators-with-the-industry-partners-who-need-them/",
+   "note": "Selected SMEs: Boxergy, Build Test Solutions, constructer.ai, Green Energy Options, Heliotec, Nusku, Power Circle, Spinview. Trials ongoing; no second cohort signalled.",
+   "updated": true,
+   "status": "r",
+   "short": "Retrofit Accelerator|Cohort 1"
+  },
+  {
+   "org": "High Value Manufacturing",
+   "name": "Wind Innovation Hub: Accelerating Innovations",
+   "desc": "In-kind support worth up to £100k each for up to 20 UK companies (TRL 5–8) across five offshore wind missions; £2m, funded by Innovate UK.",
+   "deadlineLabel": "Closed 5 Oct 2026",
+   "url": "https://iuk-business-connect.org.uk/opportunities/wind-innovation-hub-accelerating-innovations/",
+   "note": "Co-run by ORE Catapult, NCC and NMIS. No round 2 stated. HVM's news article carries no application link, which is why a news-only sweep missed it.",
+   "isNew": true,
+   "status": "r",
+   "short": "Wind Innovation Hub|Accelerating Innov."
+  },
+  {
+   "org": "High Value Manufacturing",
+   "name": "Industrialising and Digitalising Construction Challenge",
+   "desc": "£85m UKRI challenge under the R&D Missions Accelerator Programme; Liverpool City Region is the first pilot, with two social housing schemes.",
+   "deadlineLabel": "Selected participants only",
+   "url": "https://hvm.catapult.org.uk/our-priorities/industrial-sustainability/industrialising-and-digitalising-construction/",
+   "note": "No application route; enquiries via the page's contact form.",
+   "isNew": true,
+   "status": "r",
+   "short": "Industrialising|Construction Challenge"
+  },
+  {
+   "org": "High Value Manufacturing",
+   "name": "Start Up to Scale Up Pilot (automotive)",
+   "desc": "Up to £200k of funded support from HVM Catapult centres for low-carbon vehicle start-ups preparing to raise investment.",
+   "deadlineLabel": "Ran Mar–Sep 2025",
+   "url": "https://hvm.catapult.org.uk/news/funding-opportunity/start-up-to-scale-up-programme/",
+   "note": "No 2026 round stated.",
+   "isNew": true,
+   "status": "r",
+   "short": "Start Up to Scale Up|(automotive, 2025)"
+  },
+  {
+   "org": "Medicines Discovery",
+   "name": "KQ Labs Cohort 9 (with the Francis Crick Institute)",
+   "desc": "Five-month accelerator for up to ten data-driven health start-ups in AI drug discovery, digital health and precision medicine.",
+   "deadlineLabel": "Closed 12 Aug 2026",
+   "url": "https://md.catapult.org.uk/news/crick-and-mdc-open-kq-labs-applications/",
+   "note": "Start date not published; Cohort 8 started Feb 2026, so Feb 2027 is plausible. Cohort 8 companies received £40k each via SAFE note. Questions: kq-labs@crick.ac.uk.",
+   "updated": true,
+   "status": "r",
+   "short": "KQ Labs Cohort 9"
+  },
+  {
+   "org": "Medicines Discovery",
+   "name": "PACE third funding round (antibacterials)",
+   "desc": "Up to £6m for up to eight early-stage antibacterial projects (max £1m, two years each); Innovate UK, LifeArc and MDC.",
+   "deadlineLabel": "Closed 5 Nov 2025",
+   "url": "https://md.catapult.org.uk/news/pace-third-funding-round/",
+   "note": "No fourth round or award announcement found.",
+   "isNew": true,
+   "status": "r",
+   "short": "PACE 3rd round|(closed Nov 2025)"
+  },
+  {
+   "org": "Medicines Discovery",
+   "name": "MDC direct investment",
+   "desc": "£500k each into Flip Therapeutics and Nascent Therapeutics, funded through an Innovate UK scheme for Catapult investment.",
+   "deadlineLabel": "Announced 3 Sep 2026",
+   "url": "https://md.catapult.org.uk/news/mdc-invests-in-uk-biotech-pioneers/",
+   "note": "Selected participants only; no application route.",
+   "isNew": true,
+   "status": "r",
+   "short": "MDC direct|investment"
+  },
+  {
+   "org": "Cell and Gene Therapy",
+   "name": "CERSI-AT (regulatory science network)",
+   "desc": "UK Centre of Excellence in Regulatory Science and Innovation for Advanced Therapies, funded by Innovate UK with the MHRA, OLS and MRC; coordinated with the University of Birmingham.",
+   "deadlineLabel": "Announced 10 Feb 2025",
+   "url": "https://ct.catapult.org.uk/network/cersi-at",
+   "note": "No calls listed; contact cersi_at@ct.catapult.org.uk.",
+   "isNew": true,
+   "status": "r",
+   "short": "CERSI-AT|regulatory network"
+  },
+  {
+   "org": "Cell and Gene Therapy",
+   "name": "Advanced Therapy Treatment Centre (ATTC) Network",
+   "desc": "Four NHS centres, now focused on a £17.9m NIHR-funded clinical trials acceleration initiative.",
+   "deadlineLabel": "Running",
+   "url": "https://ct.catapult.org.uk/network/the-advanced-therapy-treatment-centre-network",
+   "note": "No open call or test-bed offer stated; contact ATTC@ct.catapult.org.uk.",
+   "isNew": true,
+   "status": "r",
+   "short": "ATTC clinical|trials network"
+  },
+  {
+   "org": "Cell and Gene Therapy",
+   "name": "Multi-partner manufacturing consortia",
+   "desc": "AAV formulation, dbDNA, SMARTER, UK–Swiss, robotics manufacturing and CAR-T sustainability consortia. Selected participants.",
+   "deadlineLabel": "Running",
+   "url": "https://ct.catapult.org.uk/p/consortia",
+   "note": "The page mentions open opportunities to join upcoming projects but names none; enquiries via the contact page.",
+   "isNew": true,
+   "status": "r",
+   "short": "Manufacturing|consortia"
+  },
+  {
+   "org": "Offshore Renewable Energy",
+   "name": "Launch Academy National 6",
+   "desc": "Flagship offshore wind technology accelerator: 12 months of technical and business support for 10 SMEs, with industry sponsors setting the challenges.",
+   "deadlineLabel": "Closed 25 Mar 2026",
+   "url": "https://ore.catapult.org.uk/programmes/launch-academy/national-launch-academy",
+   "note": "Ten companies announced 2 Jun 2026; runs to June 2027. The page still shows 2026 challenge areas, likely stale.",
+   "status": "r",
+   "short": "Launch Academy|National 6"
+  },
+  {
+   "org": "Offshore Renewable Energy",
+   "name": "NEOWIND Innovation Development Fund",
+   "desc": "£4.5m fund from the North East Mayor, delivered by the Catapult; first round offers up to £2.1m to offshore wind innovators in the North East.",
+   "deadlineLabel": "Closed 3 Sep 2026",
+   "url": "https://ore.catapult.org.uk/programmes/neowind",
+   "note": "Assessment ran to 16 Oct; funded programme 1 Nov 2026–31 Jul 2028. Further rounds not stated.",
+   "isNew": true,
+   "status": "r",
+   "short": "NEOWIND Innovation|Development Fund"
+  },
+  {
+   "org": "Offshore Renewable Energy",
+   "name": "F4OR Scotland",
+   "desc": "Fit 4 Offshore Renewables: up to 10 Scottish firms, 18 months.",
+   "deadlineLabel": "Opened 12 Feb 2026",
+   "url": "https://ore.catapult.org.uk/programmes/f4or",
+   "note": "Deadline not stated. F4OR says more rounds are 'in the pipeline'.",
+   "isNew": true,
+   "status": "r",
+   "short": "F4OR Scotland"
+  },
+  {
+   "org": "Offshore Renewable Energy",
+   "name": "F4OR Swansea Bay (third Welsh cohort)",
+   "desc": "Eleven south Wales firms selected; funded by The Crown Estate and Swansea Bay City Deal.",
+   "deadlineLabel": "Closed 29 Aug 2025",
+   "url": "https://ore.catapult.org.uk/media-centre/press-releases/eleven-south-wales-companies-selected-for-offshore-wind-readiness-programme",
+   "note": "No next cohort stated.",
+   "isNew": true,
+   "status": "r",
+   "short": "F4OR Swansea Bay"
+  },
+  {
+   "org": "Offshore Renewable Energy",
+   "name": "FLOWB (floating wind, UK–US)",
+   "desc": "£2m programme with up to £1m for UK firms; has funded Dublin Offshore and SeaThor.",
+   "deadlineLabel": "No open call",
+   "url": "https://ore.catapult.org.uk/programmes/flowb",
+   "note": "Contact: Magnus Willett. Launch Academy Scotland page says 'applications now open' but is stale (2024 deadline).",
+   "isNew": true,
+   "status": "r",
+   "short": "FLOWB (floating|wind UK–US)"
+  },
+  {
+   "org": "Offshore Renewable Energy",
+   "name": "TIGGOR 2",
+   "desc": "Three firms share £600k (SeaThor, Pulcea, Kinewell), funded by the North East Combined Authority.",
+   "deadlineLabel": "Call 2 closed 2 May 2025",
+   "url": "https://ore.catapult.org.uk/programmes/tiggor",
+   "note": "Eligible area given inconsistently (North of Tyne vs wider North East).",
+   "isNew": true,
+   "status": "r",
+   "short": "TIGGOR 2"
+  },
+  {
+   "org": "Satellite Applications",
+   "name": "Microgravity Biopharma Accelerator",
+   "desc": "UK's first: the Catapult designs and assesses projects; IBIC funds two proof-of-concept awards of about £50k (skin-ageing and biomining research).",
+   "deadlineLabel": "Awards announced 13 Oct 2026",
+   "url": "https://sa.catapult.org.uk/news/uks-first-microgravity-biopharma-accelerator-funds-skin-ageing-and-biomining-research/",
+   "note": "No next round, deadline or application route stated.",
+   "isNew": true,
+   "status": "r",
+   "short": "Microgravity|Biopharma Accelerator"
+  },
+  {
+   "org": "Satellite Applications",
+   "name": "UK Space Landing Pad Programme",
+   "desc": "Six-month pilot with UCL, Seraphim Space and Space South Central to help international space companies set up in the UK, based at IDEALondon.",
+   "deadlineLabel": "Launched 24 Sep 2026",
+   "url": "https://www.ucl.ac.uk/news/2026/sep/uk-space-minister-joins-launch-new-international-investment-programme",
+   "note": "First five participants to be announced later in 2026. No public application route found.",
+   "status": "r",
+   "short": "UK Space|Landing Pad"
+  },
+  {
+   "org": "Satellite Applications",
+   "name": "ESA BIC UK (partner network)",
+   "desc": "ESA incubation for UK space start-ups under five years old; £51,720 funding plus office space. Managed by STFC.",
+   "deadlineLabel": "Closed 28 Aug 2026",
+   "url": "https://esa-bic.org.uk",
+   "note": "Not run by the Catapult. Site says the next deadline 'will be shared soon'; enquiries about three months ahead (enquiries@esa-bic.org.uk).",
+   "updated": true,
+   "status": "r",
+   "short": "ESA BIC UK|(partner network)"
+  },
+  {
+   "org": "Semiconductor",
+   "name": "HMGCC Co-Creation: Imaging hidden objects in walls",
+   "desc": "Funded 12-week prototype challenge for portable imaging of covert devices; up to £60k ex VAT. Partner-run; the Catapult hosts the notice.",
+   "deadlineLabel": "Closed 17 Sep 2026",
+   "url": "https://sc.catapult.org.uk/news-insights/hmgcc-co-creation-challenge-imaging-hidden-objects-in-walls/",
+   "note": "Pitch day 1 Oct; target kick-off November 2026. Earlier round closed 29 Jan 2026.",
+   "isNew": true,
+   "status": "r",
+   "short": "HMGCC: Imaging|hidden objects (closed)"
+  }
+ ],
+ "horizon": [
+  {
+   "org": "Offshore Renewable Energy",
+   "name": "Launch Academy (next round)",
+   "desc": "Register-interest form is live for the next national or regional cohort.",
+   "deadlineLabel": "No dates announced",
+   "url": "https://ore.catapult.org.uk/programmes/launch-academy",
+   "status": "h",
+   "short": "Launch Academy|next round"
+  },
+  {
+   "org": "Satellite Applications",
+   "name": "National Autonomy and Drone Innovation Centre (NADIC)",
+   "desc": "Drone and autonomy test-bed at Westcott aimed at SMEs and component builders; Buckinghamshire Council is investing £2.25m with the Catapult.",
+   "deadlineLabel": "Facility from autumn 2026 to H2 2027",
+   "url": "https://sa.catapult.org.uk/news/new-national-drone-testing-centre-to-help-unlock-britains-45bn-drone-economy/",
+   "note": "No access scheme or application route yet.",
+   "isNew": true,
+   "status": "h",
+   "short": "NADIC drone|test-bed (2027)"
+  },
+  {
+   "org": "High Value Manufacturing",
+   "name": "National pilot to scale industrial AI adoption",
+   "desc": "Government-commissioned plan with an 'AI front door' and 'AI lighthouse' sites, co-authored by HVM Catapult, Made Smarter, BridgeAI, Innovate UK and Make UK.",
+   "deadlineLabel": "No dates stated",
+   "url": "https://hvm.catapult.org.uk/news/national-pilot-to-scale-industrial-ai-adoption-and-boost-manufacturing-competitiveness/",
+   "note": "Not yet an open call; pilot to be co-designed with primes and SMEs.",
+   "isNew": true,
+   "status": "h",
+   "short": "Industrial AI|adoption pilot"
+  },
+  {
+   "org": "Medicines Discovery",
+   "name": "Deep Science Ventures partnership",
+   "desc": "Announced 2 Jun 2026: first phase maps gaps in brain-entry technologies, with the aim of spinning out ventures with pre-seed funding.",
+   "deadlineLabel": "No dates stated",
+   "url": "https://md.catapult.org.uk/news/deep-science-ventures-next-gen-brain-treatments/",
+   "isNew": true,
+   "status": "h",
+   "short": "Deep Science Ventures|partnership"
+  },
+  {
+   "org": "Cell and Gene Therapy",
+   "name": "Universal stem cell test consortium",
+   "desc": "In development, announced 10 Dec 2025, plus unnamed 'upcoming' multi-partner projects listed on the consortia page.",
+   "deadlineLabel": "No dates stated",
+   "url": "https://ct.catapult.org.uk/p/consortia",
+   "isNew": true,
+   "status": "h",
+   "short": "Upcoming consortia|(unnamed)"
+  },
+  {
+   "org": "Semiconductor",
+   "name": "Semiconductor Catapult phases 1 and 2",
+   "desc": "Launch article (29 Sep 2026) describes integration-ready silicon capability first, then system-level integration and scale-up routes. RF load-pull and power reliability testing services are 'coming soon'.",
+   "deadlineLabel": "No dates stated",
+   "url": "https://sc.catapult.org.uk/uncategorized/uk-launches-semiconductor-catapult-to-strengthen-sovereign-capabilities-in-ai-hardware-and-defence/",
+   "note": "Services, not programmes; no SME scheme given.",
+   "isNew": true,
+   "status": "h",
+   "short": "Phase 1–2 capability|roll-out"
+  }
+ ],
+ "none": [
+  {
+   "org": "Cell and Gene Therapy",
+   "name": "No cohort accelerator or dated call",
+   "desc": "Standing support routes (in-kind spin-out support, consortia, investments) are listed under Open & Rolling and Running.",
+   "deadlineLabel": "News to 28 Jul 2026",
+   "url": "https://ct.catapult.org.uk/news",
+   "status": "n",
+   "short": "No cohort accelerator"
+  },
+  {
+   "org": "Semiconductor",
+   "name": "No cohort accelerator or dated call",
+   "desc": "Now branded Semiconductor Catapult (sc.catapult.org.uk). Business Connect and a hosted HMGCC challenge are the only items found.",
+   "deadlineLabel": "Site updated 29 Sep 2026",
+   "url": "https://sc.catapult.org.uk/start-ups-and-smes/",
+   "status": "n",
+   "short": "No cohort accelerator or dated call"
+  },
+  {
+   "org": "High Value Manufacturing",
+   "name": "No open accelerator or dated call",
+   "desc": "The Wind Innovation Hub round closed 5 Oct; construction and industrial AI items are selected-participant or horizon. See the other sections.",
+   "deadlineLabel": "Checked 26 Oct 2026",
+   "url": "https://hvm.catapult.org.uk/our-priorities/",
+   "status": "n",
+   "short": "No open accelerator or dated call"
+  },
+  {
+   "org": "Satellite Applications",
+   "name": "Westcott Incubator and Accelerator",
+   "desc": "Moved to Westcott Launch Pad, led by Buckinghamshire Council, from October 2024, with the Catapult as support partner. No 2026 or 2027 call found.",
+   "deadlineLabel": "No call found",
+   "url": "https://westcottspacecluster.org.uk/centres/wia/",
+   "status": "n",
+   "short": "Westcott Incubator|(moved, no call)"
+  }
+ ],
+ "gaps": [
+  "26 Oct deep sweep: one research agent per Catapult read programme, priorities, services, funding, news and event pages. Summaries from the page fetcher can miss form deadlines, so confirm key dates on the source page before applying.",
+  "Not reached: the Crick KQ Labs application page and the PACE funding page (permission timeouts), the MTC Scale-Up Accelerator page, the ORE Open Opportunities list (script-loaded), Digital Catapult programme listing pages 2 and 3, and the Skipso and Simply Do application portals.",
+  "Several Connected Places pages are labelled 'Closed' while their text still shows a future deadline, and some Launch Academy pages are stale. Entries use the dated text where it is clear.",
+  "Partner-run and funder items are included where a Catapult hosts or delivers them. Innovate UK Investor Partnerships (ACT and Semiconductors) is not listed: its closing date was not found and results were due 16 Nov 2026.",
+  "Researchers in Residence (academic residency, Connected Places and Satellite Applications) and skills programmes are excluded as not accelerator-type. No BSGN accelerator activity was found."
+ ]
+}
