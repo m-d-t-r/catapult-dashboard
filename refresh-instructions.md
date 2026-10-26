@@ -1,4 +1,4 @@
-You maintain `data.json`, which feeds a dashboard of accelerator, incubator and open-call programmes at the nine Innovate UK Catapults. Today's date is given in the instruction that pointed you to this file.
+You maintain `data.json`, which feeds a dashboard of accelerator, incubator and open-call programmes at the nine Innovate UK Catapults. Use today's date.
 
 Research each Catapult (Cell and Gene Therapy, Semiconductor, Connected Places, Digital, Energy Systems, High Value Manufacturing, Medicines Discovery, Offshore Renewable Energy, Satellite Applications). Do not rely on news pages alone: also read programmes, opportunities, open-calls, our-priorities, services, funding and event pages, and follow the sitemap. Include partner-run programmes the Catapults host or deliver (for example HMGCC challenges, ESA BIC UK, KQ Labs, UKRI missions).
 
