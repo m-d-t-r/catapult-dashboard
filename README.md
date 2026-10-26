@@ -1,22 +1,17 @@
-# Catapult accelerator dashboard
+# Catapult accelerator map
 
-Static site on GitHub Pages: `index.html` (list view) and `map.html` (tree diagram, Innovate UK > Catapults > programmes) both read `data.json`.
+Private working repository for the weekly map of accelerator, incubator and open-call programmes across the nine Innovate UK Catapults. The shared output is a one-page A3 landscape PDF.
 
 ## Weekly refresh
 
-The data is refreshed by hand once a week in a live Claude chat. Open a chat with this repository attached and ask:
+Once a week, open a chat with Claude, attach this repository, and ask:
 
-> Refresh the Catapult dashboard: follow `refresh-instructions.md`, run `validate.py`, and push `data.json`.
+> Refresh the Catapult map: follow `refresh-instructions.md`, run `validate.py`, push `data.json`, and produce this week's PDF with `render_pdf.py`.
 
-- `refresh-instructions.md`: the research and update rules (sources to check, sections, flags, changes and gaps).
-- `validate.py`: checks `data.json` against the shape the pages expect. Run `python3 validate.py data.json` before pushing; it exits with an error if the file is malformed.
+## Files
 
-GitHub Pages redeploys automatically after each push to `main`.
-
-## Access
-
-Public repos publish public pages, so nothing sensitive belongs in this repository. Limiting the page to a team needs either GitHub Enterprise Cloud (private Pages) or hosting the same files behind an access-controlled service such as Cloudflare Pages with Cloudflare Access.
-
-## Local preview
-
-Run `python3 -m http.server` in this folder, then open http://localhost:8000/. Opening the HTML files directly will not work, because the pages fetch `data.json`.
+- `data.json`: all programme data.
+- `refresh-instructions.md`: research and update rules (sources to check, sections, flags, changes and gaps).
+- `validate.py`: checks `data.json` before it is committed. Run `python3 validate.py data.json`.
+- `render_pdf.py`: builds the A3 landscape PDF from `map.html` and `data.json`, using the IBM Plex fonts in `fonts/`. Needs Python Playwright with Chromium.
+- `map.html` and `index.html`: the map and list views. They fetch `data.json`, so serve the folder with `python3 -m http.server` rather than opening the files directly.
